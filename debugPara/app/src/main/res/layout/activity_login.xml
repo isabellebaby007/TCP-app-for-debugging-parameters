@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear01"
+    android:background="@drawable/back2"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/linear02">
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/framela"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/StartConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/newbtn"
+            android:text="连接"
+            android:layout_gravity="left"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/enable_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开使能"
+            android:background="@drawable/newbtn"
+            android:layout_marginLeft="85dp"
+            android:layout_gravity="left"
+            android:textSize="24sp"
+            />
+        <Button
+            android:id="@+id/enable_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关使能"
+            android:background="@drawable/newbtn"
+            android:layout_marginRight="85dp"
+            android:layout_gravity="right"
+            android:textSize="24sp"
+            />
+
+        <EditText
+            android:id="@+id/auto"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|top"
+            android:text="1"
+            android:hint="地址"
+            android:textColor="@android:color/holo_orange_dark"
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="速度环比例0"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+
+    <FrameLayout
+        android:id="@+id/frame01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp">
+
+
+        <EditText
+            android:id="@+id/sudu_p_val"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/sudu_p0_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sudu_p"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textSize="20sp"></TextView>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="速度环比例1"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/sudu_p1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/sudu_p1_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/sudu_p1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="速度环积分"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/framela03"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/sudu_i"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/sudu_i_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/sudu_i_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="电流环比例"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela04"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/current_p"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+
+        <EditText
+            android:id="@+id/current_p_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/current_p_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="电流环积分"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela05"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/current_i"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/current_i_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/current_i_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="位置环P"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela06"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/weizhi_p"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/weizhi_p_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/weizhi_p_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="电流"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela07"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/current_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/current_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="速度"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela08"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/sudu"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/sudu_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/sudu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="驱动频率"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela09"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/frequency"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/frequency_val"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/frequency_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="修改"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:text="设定报警温度（达到设定值，铃声提醒）"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"></TextView>
+    <FrameLayout
+        android:id="@+id/framela10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/wendu"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"></TextView>
+        <EditText
+            android:id="@+id/wendu_set"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="23dp"
+            android:textColor="@color/colorAccent" />
+        <Button
+            android:id="@+id/wendu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="铃声提醒"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framela11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:id="@+id/read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="读取数据"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/mall_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="公司商城"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>
+</ScrollView>
